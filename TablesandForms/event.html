@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLES AND FORMS</title>
+</head>
+<body bgcolor="lightgreen">
+    <HEADER >
+        <h1 align="center">UNDERSTANDING THE TABLES AND FORM IN HTML</h1>
+    <hr color="black">
+    </HEADER>
+    <main>
+        <h3 align="center"><big>Event Table</big></h3><hr color="black">
+        <h4 align="center"><big>From 2nd January,2026 to 5th January,2026 </big></h4><hr color="black">
+        <table BORDER="8"width="1000" align="center" bgcolor="orange">
+            <thead>
+                <caption><big><b>EVENT TIMETABLE</b></big></caption>
+                <TR bgcolor="red">
+                    <TH>TIME</TH>
+                    <TH>ACTIVITY</TH>
+                    <TH>VENUE</TH>
+                </TR>
+            </thead>
+            <tbody>
+                <tr align ="center">
+                <td>4:00 p.m.</td>
+                <td>Cricket</td>
+                <td>Cricket Ground</td>
+                </tr>
+                <tr align ="center">
+                <td>5:00 p.m.</td>
+                <td>Football</td>
+                <td>Football Ground</td>
+                </tr>
+                <tr align ="center">
+                <td>6:00 p.m.</td>
+                <td>Badminton</td>
+                <td>Indoor Stadium</td>
+                </tr>
+                <tr align ="center">
+                <td>8:00 p.m.</td>
+                <td>Kabbadi</td>
+                <td>Indoor Stadium</td>
+                </tr>
+                <tr align ="center">
+                <td>9:00 p.m.</td>
+                <td>Chess</td>
+                <td>Indoor Stadium (1st floor)</td>
+                </tr>
+                <tr align ="center">
+                <td>9:30 p.m.</td>
+                <td>Table Tennis</td>
+                <td>Indoor Stadium</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <hr color="black">
+        <h3 align="center"><big> Resistration Form</big></h3><hr color="black">
+        <form action="/action.php" method="post" >
+            <label for="Name">Name:</label>
+            <input type="text" name="Name" placeholder="Enter Name" id="Name"><br>
+            <hr color="black">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter email"><br>
+            <hr color="black">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="16" placeholder="Enter age"><br>
+            <hr color="black">
+            <label for="eventdate">Preffered EventDate:</label><br>
+            <input type="date" name="eventdate" id="eventname"><br>
+            <hr color="black">
+            <label>Ticket Type:</label><br>
+            <label for="standard">Standard</label>
+            <input type="radio" id="standard" name="ticket" value="standard"><br>
+            <label for="Premium">Premium</label>
+            <input type="radio" id="Premium" name="ticket" value="Premium"><br>
+            <label for="vip">VIP</label>
+            <input type="radio" name="ticket" id="vip" value="vip"><br>
+            <hr color="black">
+            <LABEL>Sports Choosen:</LABEL><br>
+            <input type="checkbox" id="Cricket" name="sports[]" value="Cricket">
+            <label for="Cricket">Cricket</label><br>
+            <input type="checkbox" id="Football" name="sports[]" value="Football">
+            <label for="Football">Football</label><br>
+            <input type="checkbox" id="Badminton" name="sports[]" value="Badminton">
+            <label for="Badminton">Badminton</label><br>
+            <input type="checkbox" id="kabbadi" name="sports[]" value="kabbadi">
+            <label for="kabbadi">Kabbadi</label><br>
+            <input type="checkbox" id="chess" name="sports[]" value="chess">
+            <label for="chess">Chess</label><br>
+            <input type="checkbox" id="tt" name="sports[]" value="tt">
+            <label for="tt">Table Tennis</label><br>
+            <hr color="black">
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments" rows="5" column="50" placeholder="Write Comments" ></textarea><br><br>
+            <button type="submit">Register</button>
+        </form>
+    </main>
+    
+</body>
+</html>
