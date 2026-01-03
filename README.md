@@ -1,4 +1,6 @@
 Daksh Parakh 
 IT
 25118029
-
+DAY 1 DONE
+DAY 2 DONE
+DAY 3 DONE
